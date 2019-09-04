@@ -1,0 +1,119 @@
+/* font-family: 'Montserrat', sans-serif;
+font-family: 'Roboto Condensed', sans-serif; */
+
+html,
+body{
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+/* login pop up OTP verify */
+#modal1, #modal2 {
+    width: 27%;
+    border-radius: 11px;
+}
+.modalHeading h4{
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+  .OTPverify{
+    position: relative;
+    top: 30px;
+  }
+
+/* welcome area */
+.welcomeContainer {
+    margin-top: 75px;
+}
+.welcomeNoteText p{
+   font-family: 'Montserrat', sans-serif;
+   font-size: 1.3rem;
+}
+/* services */
+.services img{
+    width: 20%;
+ 
+}
+.services p {
+    font-size: 2rem;
+    font-weight: 500;
+    margin-bottom: -30px;
+}
+.container-fluid.RepairContainer {
+    background: gold;
+    padding: 60px 0;
+    margin-top: 60px !important;
+}
+
+/* mobileRepairEnquiryRow */
+.mobileRepairEnquiryRow {
+    /* width: 60%;
+    box-shadow: 0 0 9px -2px;
+    border-radius: 21px; */
+    /* padding: 18px; */
+    margin-top: 80px;
+}
+.titleNameForm h6 {
+    font-size: 1.4rem;
+    font-weight: 500;
+    background: #eee;
+    padding: 10px;
+    position: relative;
+    top: -30px;
+    width: 100.2%;
+    left: -1px;
+    border-top-right-radius: 19px;
+    border-top-left-radius: 19px;
+}
+.sumitmobiledetails {
+    margin-bottom: 20px;
+}
+.fomOfMobile {
+    box-shadow: 0 0 10px -5px;
+}
+.MobilesideText {
+    position: relative;
+    top: 65px;
+}
+.MobilesideText h4 {
+    font-size: 2rem;
+    font-weight: 600;
+    word-spacing: 4px;
+}
+.MobilesideText p {
+    font-size: 1.4rem;
+    text-align: justify;
+    padding: 0 32px;
+}
+/* navabr */
+.TachmannavLinks a {
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+.GeoLocatonBar{   
+    color: #fff;
+    border-bottom: 1px solid !important;
+}
+
+/*=================================================
+ USERDETAILS PAGE
+ =================================================*/
+ .userdetails_Userdetailsheading {
+    background: #eee;
+    border-radius: 11px;
+}
+.userdetails_Userdetailsheading h2 {
+    font-size: 2rem;
+    padding: 1rem;
+    font-weight: 500;
+    letter-spacing: 2px;
+}
+
+/* =========================================
+CONTACT PAGE
+======================================*/
+.contactFrom {
+    box-shadow: 0 0 5px -2px;
+    border-radius: 20px;
+    padding: 10px 50px !important;
+}

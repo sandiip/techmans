@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Techman</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700,800,800i,900|Roboto+Condensed:300,300i,400,700,700i&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/materialize.min.css">
+    <link rel="stylesheet" href="assets/css/sweetalert.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <nav class="nav-extended">
+        <div class="nav-wrapper">
+          <a href="#" class="brand-logo">Logo</a>
+          <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+           <ul id="nav-mobile" class="right hide-on-med-and-down TachmannavLinks">
+                <li>
+                <input type="text" class="GeoLocatonBar input-demo" id="input-demo" placeholder="serech your location">     
+                <!-- <button class="button-demo">Detect location</button> -->
+                </li>   
+                <li><a href="#">Mobile</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contact us</a></li>
+
+                <!--Login Dropdown Trigger -->
+                <a class='waves-effect waves-light btn-larg dropdown-trigger btn' href='#' data-target='dropdown1'><i class="material-icons left">account_box</i>User Login</a>
+                <!-- Dropdown Structure -->
+                <ul id='dropdown1' class='dropdown-content'>
+                    <li><a  class="modal-trigger" href="#modal1">Login</a></li>
+                    <li><a href="#!">Log Out</a></li>
+                    <li><a href="#!">Account setting</a></li>
+                </ul>
+            </ul>
+        </div>       
+    </nav>
+    <!-- mobile menu -->
+     <ul class="sidenav" id="mobile-demo">
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Contact us</a></li>
+        <li><a href="#" class="waves-effect waves-light btn modal-trigger" href="#modal1">Login</a></li>
+    </ul>
+       
+
+
+
+
+
+
+ 
+ 
+     <footer class="page-footer">
+              <div class="container">
+                <div class="row">
+                  <div class="col l6 s12">
+                    <h5 class="white-text">Footer Content</h5>
+                    <p class="grey-text text-lighten-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum eos molestias ducimus, asperiores porro dolores impedit totam similique velit quisquam 
+                      ab voluptatum soluta commodi cupiditate fugit perspiciatis aspernatur quibusdam sapiente?</p>
+                  </div>
+                  <div class="col l3 s12">
+                    <h5 class="white-text">Links</h5>
+                    <ul>
+                      <li><a class="grey-text text-lighten-3" href="#!">Link 1</a></li>
+                      <li><a class="grey-text text-lighten-3" href="#!">Link 2</a></li>
+                      <li><a class="grey-text text-lighten-3" href="#!">Link 3</a></li>
+                      <li><a class="grey-text text-lighten-3" href="#!">Link 4</a></li>
+                    </ul>
+                  </div>
+                  <div class="col l3 s12">
+                      <h5 class="white-text">Links</h5>
+                      <ul>
+                        <li><a class="grey-text text-lighten-3" href="#!">Link 1</a></li>
+                        <li><a class="grey-text text-lighten-3" href="#!">Link 2</a></li>
+                        <li><a class="grey-text text-lighten-3" href="#!">Link 3</a></li>
+                        <li><a class="grey-text text-lighten-3" href="#!">Link 4</a></li>
+                      </ul>
+                    </div>
+                </div>
+              </div>
+              <div class="footer-copyright">
+                <div class="container">
+                © 2019 Copyright Text
+                <a class="grey-text text-lighten-4 right" href="http://techtrails.in/">Design and developed by Techtrails</a>
+                <div class="fixed-action-btn">
+                    <a class="btn-floating btn-large red">
+                      <i class="large material-icons">menu</i>
+                    </a>
+                    <ul>
+                      <li><a class="btn-floating red"><i class="fa fa-facebook"></i></a></li>
+                      <li><a class="btn-floating yellow darken-1"><i class="fa fa-linkedin"></i></a></li>
+                      <li><a class="btn-floating green"><i class="fa fa-linkedin"></i></a></li>
+                      <li><a class="btn-floating blue"><i class="fa fa-instagram"></i></a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+  </footer>
+
+       <!--OTP Modal Structure -->
+       <div id="modal1" class="modal">
+            <div class="modal-content modalHeading">
+              <h4 class="center">You're almost there!</h4>   
+              <div class="input-field OTPverify">
+                    <input id="number" type="number" class="validate">
+                    <label for="number">Enter Mobile Number</label>
+                    <span class="helper-text" data-error="wrong" data-success="right">Enter a valid number </span>
+              </div>       
+            </div>
+            <div class="modal-footer">
+                    <button class="btn waves-effect waves-light btn-small modal-trigger" href="#modal2" type="submit" name="action">Submit
+                            <i class="material-icons right">send</i>
+                          </button>
+              <a href="#!" class="modal-close waves-effect waves-green btn-flat">Cancel</a>
+            </div>
+          </div>
+    
+          <div id="modal2" class="modal">
+                <div class="modal-content modalHeading">
+                  <h4 class="center">You're almost there!</h4>   
+                  <div class="input-field OTPverify">
+                        <input id="number" type="number" class="validate" maxlength="4">
+                        <label for="number">Enter 4 Digit OTP</label>
+                        <span class="helper-text" data-error="wrong" data-success="right">Enter a valid number </span>
+                  </div>       
+                </div>
+                <div class="modal-footer">
+                        <button class="btn waves-effect waves-light btn-small"  type="submit" name="action">Log in
+                                <i class="material-icons right">send</i>
+                              </button>
+                  <a href="#!" class="modal-close waves-effect waves-green btn-flat">Cancel</a>
+                </div>
+              </div>
+              
+  <script src="assets/js/jquery-3.4.1.min.js"></script>
+  <script src="assets/js/materialize.min.js"></script>
+  <script src="assets/js/plugin/jquery-geolocate.min.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDWQLAVxXN2lAj3gAIZ5Xu45qTchqw95pE"></script>
+  <script src="assets/js/sweetalert.min.js"></script>
+  <script>    
+   // Or with jQuery
+  $(document).ready(function(){
+    $('.sidenav').sidenav();
+  });
+
+//   location
+$('#input-demo').on('click', function() {
+    $('.input-demo').geolocate({
+        'components': [
+            'locality',
+            'administrative_area_level_1',
+            'postal_code'
+        ],
+        'name': 'short_name',
+        'delimeter': ' | '
+    });
+});
+
+// dropdown
+$('.dropdown-trigger').dropdown();
+
+// slider
+$('.carousel.carousel-slider').carousel({
+    fullWidth: true,
+    indicators: true
+  });
+
+//   modal
+$(document).ready(function(){
+    $('.modal').modal();
+  });
+
+  // Select
+  $(document).ready(function(){
+    $('select').formSelect();
+  });
+      
+// floating icon 
+  document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('.fixed-action-btn');
+    var instances = M.FloatingActionButton.init(elems, {
+      direction: 'left',
+      hoverEnabled: false
+    });
+  });
+</script>
+</body>
+</html>
